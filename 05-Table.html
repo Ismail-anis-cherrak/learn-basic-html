@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Element Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Table Element Examples</h1>
+
+  <p>
+    The <code>&lt;table&gt;</code> element in HTML is used for creating tables. It can include elements like <code>&lt;thead&gt;</code> (table header),
+    <code>&lt;tbody&gt;</code> (table body), <code>&lt;tfoot&gt;</code> (table footer), <code>&lt;tr&gt;</code> (table row), <code>&lt;th&gt;</code> (table header cell),
+    and <code>&lt;td&gt;</code> (table data cell).
+  </p>
+
+  <p>
+    The <code>border</code> attribute is used to specify the border width of the table and its cells, but it's not recommended in modern web design.
+    Instead, CSS should be used for styling.
+  </p>
+
+  <p>
+    <strong>Example:</strong> Basic table with <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code>.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer 1</td>
+        <td>Footer 2</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <p>
+    The <code>caption</code> element can be used to provide a title or description for the table.
+  </p>
+
+  <p>
+    <strong>Example:</strong> Table with <code>caption</code>.
+  </p>
+
+  <table>
+    <caption>Sample Table with Caption</caption>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    The <code>cellpadding</code> attribute sets the padding between the cell content and cell borders.
+  </p>
+
+  <p>
+    <strong>Example:</strong> Table with <code>cellpadding="10"</code>.
+  </p>
+
+  <table cellpadding="10">
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    The <code>colspan</code> attribute is used to specify the number of columns a table cell should span.
+  </p>
+
+  <p>
+    <strong>Example:</strong> Table with <code>colspan="2"</code>.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Header Spanning Two Columns</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

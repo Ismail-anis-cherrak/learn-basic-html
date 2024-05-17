@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      display: inline-block; /* Input is inline */
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Form Elements</h1>
+
+  <form action="/submit" method="post" target="_blank" novalidate>
+    <!-- Input Types -->
+    <label for="file-input">File Input:</label>
+    <input type="file" id="file-input" name="file-input">
+
+    <label for="search-input">Search Input:</label>
+    <input type="search" id="search-input" name="search-input" placeholder="Search...">
+
+    <label for="url-input">URL Input:</label>
+    <input type="url" id="url-input" name="url-input" placeholder="https://example.com">
+
+    <label for="datalist-input">Countries (Datalist):</label>
+    <input type="text" id="datalist-input" name="datalist-input" list="countries" placeholder="Choose a country">
+    <datalist id="countries">
+      <option value="United States">
+      <option value="United Kingdom">
+      <option value="Canada">
+      <option value="Australia">
+      <option value="Germany">
+    </datalist>
+
+    <!-- Form Attributes -->
+    <label for="text-input">Text Input:</label>
+    <input type="text" id="text-input" name="text-input" placeholder="Enter text" minlength="3" maxlength="10" readonly autofocus>
+
+    <label for="select-single">Single Select:</label>
+    <select id="select-single" name="select-single">
+      <option value="option1">Option 1</option>
+      <option value="option2" selected>Option 2 (Selected)</option>
+      <option value="option3">Option 3</option>
+    </select>
+
+    <label for="select-multiple">Multiple Select:</label>
+    <select id="select-multiple" name="select-multiple" multiple>
+      <option value="option1">Option 1</option>
+      <option value="option2" selected>Option 2 (Selected)</option>
+      <option value="option3">Option 3</option>
+    </select>
+
+    <label for="optgroup-select">Select with Optgroup:</label>
+    <select id="optgroup-select" name="optgroup-select">
+      <optgroup label="Group 1">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </optgroup>
+      <optgroup label="Group 2">
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+      </optgroup>
+
+    <!-- Styles in HTML -->
+    <label for="text-input">Text Input:</label>
+    <input type="text" id="text-input" name="text-input" placeholder="Enter text" value="Default Value">
+
+    <label for="email-input">Email Input:</label>
+    <input type="email" id="email-input" name="email-input" placeholder="user@example.com" required>
+
+    <label for="password-input">Password Input:</label>
+    <input type="password" id="password-input" name="password-input" placeholder="Enter password" required>
+
+    <label for="number-input">Number Input:</label>
+    <input type="number" id="number-input" name="number-input" placeholder="Enter number" value="42">
+
+    <label for="date-input">Date Input:</label>
+    <input type="date" id="date-input" name="date-input" required>
+
+    <label for="checkbox-input">Checkbox:</label>
+    <input type="checkbox" id="checkbox-input" name="checkbox-input" value="checked">
+    <label for="checkbox-input">Check me</label>
+
+    <label for="radio-input-1">Radio Button 1:</label>
+    <input type="radio" id="radio-input-1" name="radio-group" value="option1" checked>
+    <label for="radio-input-1">Option 1</label>
+
+    <label for="radio-input-2">Radio Button 2:</label>
+    <input type="radio" id="radio-input-2" name="radio-group" value="option2">
+    <label for="radio-input-2">Option 2</label>
+
+    <label for="select-input">Select:</label>
+    <select id="select-input" name="select-input">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+
+    <label for="textarea-input">Textarea:</label>
+    <textarea id="textarea-input" name="textarea-input" rows="4" placeholder="Enter text"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p>
+    The consolidated HTML page includes examples and explanations for various HTML form elements, input types, and form attributes.
+  </p>
+  <p>
+    The <code>&lt;input&gt;</code> element is an inline-level HTML element. This means that it does not start on a new line
+    and only takes up as much width as necessary, allowing other elements to appear on the same line.
+    The styling in the example ensures that the input element is visually inline, making it suitable for use within text or in compact layouts.
+  </p>
+
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Audio Tag Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Audio Tag Examples</h1>
+
+  <p>
+    The <code>&lt;audio&gt;</code> tag in HTML is used to embed audio content on a web page. It supports various attributes
+    to control the playback and appearance of the audio player. Here are examples for each attribute:
+  </p>
+
+  <h2>Example 1: Basic Audio with Controls</h2>
+  <p>
+    The <code>controls</code> attribute adds playback controls to the audio player, allowing users to play, pause, adjust the volume, and more.
+  </p>
+  <audio controls>
+    <source src="audio/example.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Example 2: Autoplay</h2>
+  <p>
+    The <code>autoplay</code> attribute automatically starts playing the audio when the page loads. Please note that this can be intrusive, so use it carefully.
+  </p>
+  <audio controls autoplay>
+    <source src="audio/example.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Example 3: Loop</h2>
+  <p>
+    The <code>loop</code> attribute causes the audio to continuously loop, restarting when it reaches the end.
+  </p>
+  <audio controls loop>
+    <source src="audio/example.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Example 4: Muted</h2>
+  <p>
+    The <code>muted</code> attribute starts the audio playback with the sound muted.
+  </p>
+  <audio controls muted>
+    <source src="audio/example.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Example 5: Multiple Sources with Different Formats</h2>
+  <p>
+    Provide multiple <code>&lt;source&gt;</code> elements to ensure compatibility with different browsers and audio formats.
+  </p>
+  <audio controls>
+    <source src="audio/example.mp3" type="audio/mp3">
+    <source src="audio/example.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Video and Track Elements Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .video-container {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Video and Track Elements Examples</h1>
+
+  <p>
+    The <code>&lt;video&gt;</code> tag in HTML is used to embed video content on a web page, and the <code>&lt;track&gt;</code>
+    element is used for providing timed text tracks (subtitles or captions). Here are examples for each attribute:
+  </p>
+
+  <div class="video-container">
+    <h2>Example 1: Basic Video with Controls</h2>
+    <p>
+      The <code>controls</code> attribute adds playback controls to the video player.
+    </p>
+    <video controls>
+      <source src="video/example.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <h2>Example 2: Autoplay</h2>
+    <p>
+      The <code>autoplay</code> attribute automatically starts playing the video when the page loads.
+    </p>
+    <video controls autoplay>
+      <source src="video/example.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <h2>Example 3: Loop</h2>
+    <p>
+      The <code>loop</code> attribute causes the video to continuously loop.
+    </p>
+    <video controls loop>
+      <source src="video/example.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <h2>Example 4: Muted</h2>
+    <p>
+      The <code>muted</code> attribute starts the video playback with the sound muted.
+    </p>
+    <video controls muted>
+      <source src="video/example.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <h2>Example 5: Width and Height</h2>
+    <p>
+      The <code>width</code> and <code>height</code> attributes can be used to specify the width and height of the video player.
+    </p>
+    <video controls width="400" height="225">
+      <source src="video/example.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <h2>Example 6: Multiple Sources with Different Formats</h2>
+    <p>
+      Provide multiple <code>&lt;source&gt;</code> elements to ensure compatibility with different browsers and video formats.
+    </p>
+    <video controls>
+      <source src="video/example.mp4" type="video/mp4">
+      <source src="video/example.webm" type="video/webm">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <h2>YouTube Video Example</h2>
+    <p>
+      Embedding a YouTube video using an <code>&lt;iframe&gt;</code> with custom attributes.
+    </p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0"
+      allowfullscreen
+      poster="thumbnail.jpg">
+    </iframe>
+  </div>
+
+  <div class="video-container">
+    <h2>Track Element Example</h2>
+    <p>
+      The <code>&lt;track&gt;</code> element is used to provide timed text tracks for the video. Here's an example:
+    </p>
+    <video controls>
+      <source src="video/example.mp4" type="video/mp4">
+      <track src="subtitles/example.vtt" kind="subtitles" srclang="en" label="English" default>
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <h2>Track Element Attributes</h2>
+    <p>
+      Additional attributes of the <code>&lt;track&gt;</code> element include <code>preload</code>.
+      <p>
+        The <code>preload</code> attribute in HTML is used with the <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> elements
+        to specify how much of the media content should be preloaded before the user interacts with the player. It accepts
+        different values, such as:
+        <ul>
+          <li><code>none</code>: The browser should not preload the media.</li>
+          <li><code>metadata</code>: Only metadata (like duration and dimensions) should be preloaded.</li>
+          <li><code>auto</code>: The browser should preload the entire media file.</li>
+        </ul>
+        The choice of the preload value can impact the initial loading time of the web page and user experience.
+      </p>
+      
+    </p>
+    <video controls>
+      <source src="video/example.mp4" type="video/mp4">
+      <track src="subtitles/example.vtt" kind="captions" srclang="en" label="English" default preload="metadata">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+</body>
+</html>

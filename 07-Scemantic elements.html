@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    section {
+      border: 1px solid #ddd;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    header, nav, main, article, aside, footer {
+      border: 1px solid #ddd;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    figure {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Importance of Semantic HTML Elements</h1>
+
+  <p>
+    Semantic HTML elements provide meaning to the structure of a web page. They convey information about the content
+    and improve the overall clarity, accessibility, and SEO of the page. Here are some key semantic elements and their
+    importance:
+  </p>
+
+  <section>
+    <h2>&lt;header&gt; and &lt;footer&gt; within &lt;section&gt;</h2>
+    <p>
+      The <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements can be placed within a <code>&lt;section&gt;</code> to define header and footer content specific to that section.
+    </p>
+    <header>
+      <h3>Section Header</h3>
+      <p>This is the header content for the section.</p>
+    </header>
+    
+    <footer>
+      <p>This is the footer content for the section.</p>
+    </footer>
+  </section>
+
+  <nav>
+    <h2>&lt;nav&gt; Element</h2>
+    <p>
+      The <code>&lt;nav&gt;</code> element is used to define a set of navigation links. It helps screen readers and
+      search engines understand the structure of the navigation menu, improving accessibility.
+    </p>
+  </nav>
+
+  <aside>
+    <h2>&lt;aside&gt; Element</h2>
+    <p>
+      The <code>&lt;aside&gt;</code> element represents content that is tangentially related to the content around it.
+      It can be used for sidebars, pull quotes, or any content that is related but not the main focus.
+    </p>
+  </aside>
+
+  <main>
+    <h2>&lt;main&gt; Element</h2>
+    <p>
+      The <code>&lt;main&gt;</code> element contains the main content of a document. It aids in identifying the primary
+      content and separating it from headers, footers, and other ancillary content.
+    </p>
+  </main>
+
+  <article>
+    <h2>&lt;article&gt; Element with &lt;section&gt; Elements</h2>
+    <p>
+      The <code>&lt;article&gt;</code> element represents a self-contained piece of content that can be distributed and
+      reused independently. Inside the article, you can use <code>&lt;section&gt;</code> elements to further organize content.
+    </p>
+    <article>
+      <section>
+        <h3>Section 1</h3>
+        <p>Content of section 1 inside the article.</p>
+      </section>
+      <section>
+        <h3>Section 2</h3>
+        <p>Content of section 2 inside the article.</p>
+      </section>
+    </article>
+  </article>
+
+  <figure>
+    <h2>&lt;figure&gt; and &lt;figcaption&gt;</h2>
+    <p>
+      The <code>&lt;figure&gt;</code> element is used to group and represent content, such as images, diagrams, photos, code snippets, etc.
+      The <code>&lt;figcaption&gt;</code> element provides a caption or description for the content inside the <code>&lt;figure&gt;</code>.
+    </p>
+    <img src="example-image.jpg" alt="Example Image">
+    <figcaption>Figure 1: Example Image</figcaption>
+  </figure>
+  <img src="EN-Semantic-Search-Non-Semantic.png" alt="" style="width: 100% ;">
+
+</body>
+</html>
+
